@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शुभ जन्मोत्सव - Pravas Pandit</title>
+    <style>
+        :root {
+            --primary-yellow: #ffee00;
+            --bright-pink: #ff2a75;
+            --soft-white: #ffffff;
+            --fun-blue: #00d2ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Fredoka One', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Whimsical Childish Floating Background Doodles */
+        .decorations {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .item {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: floatUpDown 4s infinite ease-in-out;
+        }
+
+        .item:nth-child(1) { top: 10%; left: 8%; animation-delay: 0s; }
+        .item:nth-child(2) { top: 15%; right: 10%; animation-delay: 1s; }
+        .item:nth-child(3) { bottom: 15%; left: 12%; animation-delay: 2s; }
+        .item:nth-child(4) { bottom: 20%; right: 8%; animation-delay: 1.5s; }
+        .item:nth-child(5) { top: 45%; left: 4%; font-size: 3.5rem; }
+        .item:nth-child(6) { top: 50%; right: 4%; font-size: 3.5rem; }
+
+        @keyframes floatUpDown {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.1); }
+        }
+
+        /* Main Festive Card */
+        .wishes-card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 8px solid var(--primary-yellow);
+            border-radius: 40px;
+            padding: 40px 30px;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 0px #c91850, 0 30px 50px rgba(0,0,0,0.3);
+            z-index: 2;
+            position: relative;
+            transform: rotate(-1deg);
+        }
+
+        /* Colorful Banner Ribbon effect */
+        .header-ribbon {
+            background: #ff5e62;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 2.2rem;
+            font-weight: bold;
+            box-shadow: 0 8px 0px #d13a3e;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+            border: 4px dashed #fff;
+        }
+
+        /* Profile/Hero Image Frame */
+        .image-container {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 25px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 30px;
+            border: 6px solid var(--fun-blue);
+            box-shadow: 0 10px 0px rgba(0,0,0,0.1);
+            transform: rotate(2deg);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Cute Tika overlay element */
+        .tika-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #e63946;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Typography */
+        h2 {
+            font-size: 2rem;
+            color: #7209b7;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        /* Childish Poem Box */
+        .poem-container {
+            background: #fff3b0;
+            padding: 30px 20px;
+            border-radius: 30px;
+            border: 4px dashed #ff007f;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        .poem-line {
+            font-size: 1.4rem;
+            line-height: 1.9;
+            color: #333333;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .poem-line:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Sweet Footer Candy Style */
+        .footer-badge {
+            margin-top: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff007f;
+            background: #e8f0fe;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .wishes-card {
+                padding: 30px 15px;
+                border-width: 5px;
+            }
+            .header-ribbon {
+                font-size: 1.6rem;
+                padding: 10px 20px;
+            }
+            .poem-line {
+                font-size: 1.15rem;
+            }
+            .image-container {
+                width: 170px;
+                height: 170px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="decorations">
+        <div class="item">🎈</div>
+        <div class="item">🎂</div>
+        <div class="item">🕯️</div>
+        <div class="item">🥳</div>
+        <div class="item">🎈</div>
+        <div class="item">🎂</div>
+    </div>
+
+    <div class="wishes-card">
+        <div class="header-ribbon">Pravas Pandit</div>
+        
+        <h2>Happy Birthday! ✨🔴✨</h2>
+
+        <div class="image-container">
+            <img class="profile-img" src="Screenshot 2026-07-08 160018.png" alt="Pravas Pandit Celebrating">
+            <div class="tika-badge">🔴</div>
+        </div>
+
+        <div class="poem-container">
+            <p class="poem-line">आजको दिन फूलझैँ फुलोस्,</p>
+            <p class="poem-line">तिम्रो हाँसो जूनझैँ झुलोस्।</p>
+            <p class="poem-line">हरेक सपना सत्य बनोस्,</p>
+            <p class="poem-line">जीवनभर सुख नै मिलोस्।</p>
+            <p class="poem-line">बिहानीको पहिलो किरणले,</p>
+            <p class="poem-line">आशाका रङ छरोस्।</p>
+            <p class="poem-line">मनका सबै अधुरा चाहना,</p>
+            <p class="poem-line">समयसँगै पूरा होऊन्।</p>
+            <p class="poem-line">दुःखका बादल टाढा जाऊन्,</p>
+            <p class="poem-line">खुसीका वर्षा निरन्तर परून्।</p>
+            <p class="poem-line">हरेक पाइला सफल बनोस्,</p>
+            <p class="poem-line">भाग्यका ढोका सधैं खुलून्।</p>
+        </div>
+
+        <div class="footer-badge">
+            🎈 Enjoy Your Cake & Tika! 🎂
+            Parvas 🥴🥴
+            kaha xau ramrari basa la🥱😜😜🫡🫡🫡
+        </div>
+    </div>
+
+</body>
+</html>
